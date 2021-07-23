@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10% 0 5%;
+}
+
+img {
+    width: 30%;
+}
+
+section:first-of-type img {
+    float: left;
+    clip-path: polygon(0 0, 60% 0, 72% 66%, 100% 66%, 100% 100%, 0 100%);
+    shape-outside: polygon(0 0, 60% 0, 72% 66%, 100% 66%, 100% 100%, 0 100%);
+}
+
+section:last-of-type img {
+    float: right;
+    clip-path: polygon(35% 38%, 35% 0, 100% 0, 100% 100%, 25% 100%, 25% 60%);
+    shape-outside: polygon(
+        35% 38%,
+        35% 0,
+        100% 0,
+        100% 100%,
+        25% 100%,
+        25% 60%
+    );
+}
